@@ -4,3 +4,16 @@
 
 Hi! And welcome. This repository is a home to __Wizardrium__, a compilation of notes and useful information gathered by me during my learning. It is about programming in general (though, right now it's mostly about front-end web development). Enjoy!
 
+To start, head to the main [table of contents](contents.md).
+
+To download a copy of Wizardrium simply type:
+
+```
+$ git clone github.com/yaripey/wizardrium
+```
+
+Later, to get recent updates type:
+
+```
+$ git pull
+```
