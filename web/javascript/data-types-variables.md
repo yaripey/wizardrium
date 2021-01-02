@@ -34,7 +34,7 @@ This line tells JS to create a _constant_ `x` with _value_ of `2`.
 
 In this particular case the type of the variable will be _Number_. JS takes the responsibility of defining the type of the variable based on the value that you give it. This time, `2` is just a number. On the other hand, we can type it like this:
 
-```
+```js
 const x = '2';
 ```
 
@@ -42,7 +42,7 @@ In this case, `'2'` is a string (because it is in quotes), that's why in here, J
 
 We can also freely change the data type that variable is storing without mistakes, so such code will still be valid:
 
-```
+```js
 let test = 1
 test = "Hi there"
 test = { test: 'Hi there!' }
@@ -52,7 +52,7 @@ test = { test: 'Hi there!' }
 
 If we want to create not a _constant_, but a _variable_, we need to use the keyword __let__.
 
-```
+```js
 let x = 2;
 ```
 
@@ -84,13 +84,16 @@ Here, all data types except `Object` are primitive data types, whereas `Object` 
 ### String
 
 `String` is used to store text. It can be created like this:
-```
+
+```js
 const firstString = 'hi'
 const secondString = "Hi there"
 const thirdString = `Hi there`
 ```
+
 There is no difference in using _single quotes_ or _double quotes_. But _backticks_ give the string a special property: we can use `${}` structure to insert variables or expression inside string, like this:
-```
+
+```js
 const a = 2;
 const b = 3;
 const result = `a + b will be ${a + b}` // "a + b will be 5"
@@ -99,17 +102,20 @@ const result = `a + b will be ${a + b}` // "a + b will be 5"
 ### Number
 
 `Number` represents integer and floating numbers (decimals and exponentials). Examples:
-```
+
+```js
 const number1 = 3;
 const number2 = 3.43;
 const number3 = 3e5; // 3 * 10^5;
 ```
+
 A number type can also be `+Infinity`, `-Infinity` or `Nan`.
 
 ### BigInt
 
 In JavaScript, `Number` type can only represent numbers less than $(2^{53} - 1)$ and more than $-(2^{53} - 1)$. Hovewer, for bigger numbers we can use `BigInt`. A `BigInt` is created by appending `n` to the end of an integer. Example:
-```
+
+```js
 const value1 = 900719925124740998n;
 
 const result1 = value1 + 1n;
@@ -135,7 +141,7 @@ __Note!__ `null` is not the same as NULL or Null.
 
 `Symbol` is an immutable primitive value that is unique. Example:
 
-```
+```js
 const value1 = Symbol('hello');
 const value2 = Symbol('hello');
 ```
@@ -146,7 +152,7 @@ Though `value1` and `value2` both contain `hello`, they are different as they ar
 
 An `object` is a complex data type that allows us to store collections of data. For example:
 
-```
+```js
 const student = {
   firstName: 'Steven',
   lastName: null,
@@ -157,7 +163,8 @@ const student = {
 ## JavaScript typeof
 
 To find the type of a variable, we can use the `typeof` operator. Example:
-```
+
+```js
 const test = 'hello'
 typeof(test); // returns 'string'
 ```
