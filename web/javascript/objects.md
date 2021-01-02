@@ -1,6 +1,6 @@
-# Objects
-
 > [Web](../README.md) / [JavaScript](README.md) /
+
+# Objects
 
 ## Table of contents
 - [General Info](#general-info)

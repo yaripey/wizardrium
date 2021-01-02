@@ -1,6 +1,6 @@
-# Data types and variables in JavaScript
-
 > [Web](../README.md) / [JavaScript](README.md) /
+
+# Data types and variables in JavaScript
 
 ## Table of contents
 - [Variables and constants](#variables-and-constants)
