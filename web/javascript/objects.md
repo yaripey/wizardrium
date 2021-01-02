@@ -1,5 +1,11 @@
 # Objects
 
+> [Web](../README.md) / [JavaScript](README.md) /
+
+## Table of contents
+- [General Info](#general-info)
+- [this keyword](#this-keyword)
+
 ## General info
 
 In JavaScript an `Object` is a data type that actually represents a collection of data. It is a group of _key-value_ pairs that can store any other data type values, even other object. Example:
@@ -80,3 +86,4 @@ setTimeout(() => {car.showWheels()}, 2000)
 
 `() => {}` allows us to create an anonymous function and in JavaScript, when you create such function somewhere it will return this function's object in it's place. So now `setTimeout` will have a function with `car.showWheels()` call in it's body. `showWheels()` will have a proper context and everything will work just fine.
 
+Also, these _arrow functions_ have a separate rules of behavior with `this` keyword. Inside of such function, `this` always represents the object that defined the arrow function. Almost always that would be the `global` object.
